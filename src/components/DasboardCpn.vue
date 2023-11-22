@@ -60,7 +60,7 @@ export default {
 
         // buscando os burges em pedidos
         async getList(){
-            const req = await fetch("http://localhost:3000/burgers");
+            const req = await fetch("https://api-brugers.vercel.app/burgers");
             const data = await req.json()
 
             this.burgers = data;
@@ -72,7 +72,7 @@ export default {
 
         //buscando status pedido
         async getStatus(){
-            const req = await fetch("http://localhost:3000/status");
+            const req = await fetch("https://api-brugers.vercel.app/status");
             // transformando em data
             const data = await req.json();
 
@@ -81,7 +81,7 @@ export default {
 
         //deletar
         async deleteBurger(id){
-            const req = await fetch(`http://localhost:3000/burgers/${id}`, {
+            const req = await fetch(`https://api-brugers.vercel.app/burgers/${id}`, {
                 method: "DELETE",
             
             });
@@ -101,7 +101,7 @@ export default {
         async updateBurger(event, id){
             const option = event.target.value;
             const dataJson = JSON.stringify( {status: option})
-            const req = await fetch(`http://localhost:3000/burgers/${id}`,{
+            const req = await fetch(`https://api-brugers.vercel.app/burgers/${id}`,{
                 method: "PATCH",
                 headers: { "Content-Type": "application/json" },
                 body: dataJson

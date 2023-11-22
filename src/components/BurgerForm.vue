@@ -60,7 +60,7 @@ export default {
     methods: {
         // pegar ingredientes
         async getIngrents() {
-            const req = await fetch('http://localhost:3000/ingredientes');
+            const req = await fetch('https://api-brugers.vercel.app/ingredientes');
             const data = await req.json();
 
             this.buns = data.buns;
@@ -82,7 +82,7 @@ export default {
             // transformando json em string e adicionar em burgers no db.json
             const dataJson = JSON.stringify(data)
 
-            const req =await fetch('http://localhost:3000/burgers', {
+            const req =await fetch('https://api-brugers.vercel.app/burgers', {
                 method: 'POST',
                 headers: {"Content-Type": "application/json"},
                 body: dataJson
