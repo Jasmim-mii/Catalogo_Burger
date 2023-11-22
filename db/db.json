@@ -1,0 +1,150 @@
+{
+  "ingredientes": {
+    "buns": [
+      {
+        "id": 1,
+        "type": "Italiano Branco"
+      },
+      {
+        "id": 2,
+        "type": "3 Queijos"
+      },
+      {
+        "id": 3,
+        "type": "Parmesão e Orégano"
+      },
+      {
+        "id": 4,
+        "type": "Integral"
+      }
+    ],
+    "productBurger": [
+      {
+        "id": 1,
+        "type": "Maminha"
+      },
+      {
+        "id": 2,
+        "type": "Alcatra"
+      },
+      {
+        "id": 3,
+        "type": "Picanha"
+      },
+      {
+        "id": 4,
+        "type": "Veggie burger"
+      }
+    ],
+    "ingredients": [
+      {
+        "id": 1,
+        "type": "Bacon"
+      },
+      {
+        "id": 2,
+        "type": "Cheddar"
+      },
+      {
+        "id": 3,
+        "type": "Salame"
+      },
+      {
+        "id": 4,
+        "type": "Tomate"
+      },
+      {
+        "id": 4,
+        "type": "Cebola roxa"
+      },
+      {
+        "id": 4,
+        "type": "Pepino"
+      }
+    ]
+  },
+  "status": [
+    {
+      "id": 1,
+      "type": "Solicitado"
+    },
+    {
+      "id": 2,
+      "type": "Preparando"
+    },
+    {
+      "id": 3,
+      "type": "Finalizado"
+    }
+  ],
+  "burgers": [
+    {
+      "name": "Marcos",
+      "burger": "Veggie burger",
+      "bun": "3 Queijos",
+      "ingredients": [
+        "Pepino",
+        "Cebola roxa",
+        "Tomate"
+      ],
+      "status": "Preparando",
+      "id": 1
+    },
+    {
+      "name": "Joanna",
+      "burger": "Maminha",
+      "bun": "Parmesão e Orégano",
+      "ingredients": [
+        "Bacon",
+        "Salame"
+      ],
+      "status": "Solicitado",
+      "id": 2
+    },
+    {
+      "name": "Ana",
+      "burger": "Picanha",
+      "bun": "Integral",
+      "ingredients": [
+        "Bacon",
+        "Cheddar",
+        "Salame",
+        "Cebola roxa",
+        "Tomate"
+      ],
+      "status": "Finalizado",
+      "id": 3
+    },
+    {
+      "name": "Yasmim",
+      "burger": "Maminha",
+      "bun": "Integral",
+      "ingredients": [
+        "Bacon"
+      ],
+      "status": "Finalizado",
+      "id": 4
+    },
+    {
+      "name": "Douglas",
+      "burger": "Veggie burger",
+      "bun": "Italiano Branco",
+      "ingredients": [
+        "Cebola roxa"
+      ],
+      "status": "Preparando",
+      "id": 5
+    },
+    {
+      "name": "Marcelo",
+      "burger": "Alcatra",
+      "bun": "3 Queijos",
+      "ingredients": [
+        "Bacon",
+        "Cheddar"
+      ],
+      "status": "Solicitado",
+      "id": 6
+    }
+  ]
+}
